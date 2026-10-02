@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="七日家常餐單，以水溶性纖維、深海魚和少飽和脂肪為主，附一人份材料和煮法。">
+  <meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121411" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="降LDL每日飲食">
+  <title>降LDL每日飲食</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="safe-fill" aria-hidden="true"></div>
+  <a class="skip" href="#menu">跳至今日餐單</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+          <rect width="48" height="48" rx="14" fill="currentColor"/>
+          <path d="M12 29c1.4 8 22.6 8 24 0" fill="none" stroke="#f6f1e6" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M16 29c1 4.6 15 4.6 16 0" fill="none" stroke="#f6f1e6" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M24 12c5.5 3.2 7 8.5 5 14" fill="none" stroke="#f0c2a5" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <p class="eyebrow">七日家常 · 一人份</p>
+          <h1>降LDL每日飲食</h1>
+        </div>
+      </div>
+      <p class="lede">多菜、豆類、燕麥和雜糧，深海魚每週約兩至三次。以蒸、灼、焗或少油快炒為主，少鹽、少飽和脂肪。</p>
+      <p class="fish-note">深海魚排期：星期一三文魚、星期三鯖魚、星期五沙甸魚。</p>
+      <nav class="jump" aria-label="頁面章節">
+        <a href="#menu" data-jump="today">今日餐單</a>
+        <a href="#principles">飲食原則</a>
+        <a href="#shopping">買餸清單</a>
+        <a href="#eating-out">外出用餐</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="day-nav">
+    <div class="wrap">
+      <div class="day-scroller" id="day-scroller" role="tablist" aria-label="選擇星期"></div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="menu" class="menu" role="tabpanel" tabindex="0">
+      <noscript>
+        <p class="fallback">請啟用 JavaScript，頁面才可以按今日自動顯示七日餐單。下方的飲食原則、買餸清單和外出提示仍然可以閱讀。</p>
+      </noscript>
+    </section>
+
+    <section id="principles" class="section">
+      <h2>飲食原則</h2>
+      <p class="section-lead">配合這份餐單的做法：多選水溶性纖維，減少飽和脂肪和反式脂肪，鹽也要少。這是日常飲食安排，不是療程。</p>
+
+      <article class="info-card">
+        <h3>宜多選擇</h3>
+        <ul class="points">
+          <li>燕麥、大麥、豆類、豆腐和豆漿，用來增加水溶性纖維。</li>
+          <li>蔬菜、水果、糙米和雜糧飯。</li>
+          <li>深海魚每星期約 2 至 3 次，例如三文魚、鯖魚、沙甸魚。</li>
+          <li>原味、無鹽果仁，每次約一小把（10 克左右）。</li>
+          <li>橄欖油或芥花籽油，每餐約 1 茶匙，用來代替牛油或豬油。</li>
+          <li>有添加植物固醇的食品可以選擇，但不是必須，亦不必每日都吃。</li>
+        </ul>
+      </article>
+
+      <article class="info-card">
+        <h3>宜減少</h3>
+        <ul class="points less">
+          <li>肥肉、禽類外皮、午餐肉、腸仔、臘味等加工肉。</li>
+          <li>牛油、豬油、椰子油、奶油、全脂芝士。</li>
+          <li>酥皮、菠蘿包、蛋撻、餅乾和油炸食品。這些食品通常用大量牛油或植物起酥油。</li>
+          <li>蛋黃和內臟適量即可。這份餐單一週用三隻蛋，沒有安排內臟。</li>
+          <li>高鹽醬料。用薑、蒜、蔥、檸檬、米醋、胡椒和香草提味。菜式預設不加鹽，只使用步驟寫明的少量生抽或豉油。</li>
+        </ul>
+      </article>
+
+      <article class="info-card">
+        <h3>家常煮法</h3>
+        <p>以蒸、灼、焗、氣炸，或用橄欖油、芥花籽油少油快炒為主。避免長時間高溫油炸。飯煲煮糙米或雜糧米即可，不必用白飯油去炒。</p>
+        <p>份量按一位成人估算，可按食量，以及醫生、營養師的個別建議調整。有糖尿病的人士，飯量、水果和燕麥份量要配合自己的餐單。</p>
+      </article>
+    </section>
+
+    <section id="shopping" class="section">
+      <h2>買餸清單</h2>
+      <p class="section-lead">按一位成人、七日餐單估算。家中已有的油和香料不必再買。罐頭豆和魚建議揀無添加糖的水浸款，下鍋前沖一沖。</p>
+
+      <article class="info-card">
+        <h3>穀物</h3>
+        <ul class="shop">
+          <li><span>燕麥片</span><span>約 150 克</span></li>
+          <li><span>珍珠大麥</span><span>40 克</span></li>
+          <li><span>藜麥</span><span>40 克</span></li>
+          <li><span>糙米或雜糧米</span><span>約 350 克</span></li>
+          <li><span>紅豆</span><span>20 克</span></li>
+          <li><span>全麥麵包</span><span>約 4 片</span></li>
+          <li><span>粉絲</span><span>1 小扎</span></li>
+        </ul>
+      </article>
+
+      <article class="info-card">
+        <h3>豆類和豆製品</h3>
+        <ul class="shop">
+          <li><span>鷹嘴豆罐頭</span><span>1 罐</span></li>
+          <li><span>扁豆（乾或罐頭）</span><span>乾豆約 50 克</span></li>
+          <li><span>黑豆（熟或罐頭）</span><span>熟豆約 80 克</span></li>
+          <li><span>眉豆或芸豆罐頭</span><span>熟豆約 100 克</span></li>
+          <li><span>硬豆腐或板豆腐</span><span>約 450 克</span></li>
+          <li><span>嫩豆腐</span><span>約 350 克</span></li>
+          <li><span>無糖豆漿</span><span>1 小盒，可選</span></li>
+        </ul>
+      </article>
+
+      <article class="info-card">
+        <h3>魚、肉、蛋</h3>
+        <ul class="shop">
+          <li><span>三文魚柳（去皮）</span><span>120 克</span></li>
+          <li><span>鯖魚柳或水浸罐頭</span><span>鮮柳 100 克或 1 罐</span></li>
+          <li><span>沙甸魚或水浸罐頭</span><span>2 條或 1 罐</span></li>
+          <li><span>龍利魚柳或鯇魚柳</span><span>100 克</span></li>
+          <li><span>蝦仁</span><span>100 克</span></li>
+          <li><span>去皮雞胸</span><span>約 360 克</span></li>
+          <li><span>雞蛋</span><span>3 隻</span></li>
+        </ul>
+      </article>
+
+      <article class="info-card">
+        <h3>蔬菜</h3>
+        <ul class="shop">
+          <li><span>菜心</span><span>約 550 克</span></li>
+          <li><span>西蘭花</span><span>約 300 克</span></li>
+          <li><span>芥蘭</span><span>200 克</span></li>
+          <li><span>番茄</span><span>5 個</span></li>
+          <li><span>車厘茄</span><span>1 盒</span></li>
+          <li><span>洋蔥</span><span>3 個</span></li>
+          <li><span>甘筍</span><span>3 條</span></li>
+          <li><span>西芹</span><span>2 條</span></li>
+          <li><span>青瓜</span><span>2 條</span></li>
+          <li><span>彩椒</span><span>2 個</span></li>
+          <li><span>鮮磨菇</span><span>1 盒</span></li>
+          <li><span>乾冬菇</span><span>6 隻</span></li>
+          <li><span>節瓜</span><span>2 條</span></li>
+          <li><span>菠菜</span><span>1 小包</span></li>
+          <li><span>生菜</span><span>1 棵</span></li>
+          <li><span>粟米粒</span><span>約半杯</span></li>
+          <li><span>冷凍毛豆莢</span><span>1 小包</span></li>
+          <li><span>番薯</span><span>2 個</span></li>
+          <li><span>薑、蒜頭、蔥</span><span>各 1 份</span></li>
+          <li><span>檸檬</span><span>3 個</span></li>
+          <li><span>青檸</span><span>1 個，可免</span></li>
+        </ul>
+      </article>
+
+      <article class="info-card">
+        <h3>水果</h3>
+        <ul class="shop">
+          <li><span>蘋果</span><span>1 個</span></li>
+          <li><span>梨</span><span>1 個</span></li>
+          <li><span>香蕉</span><span>3 隻</span></li>
+          <li><span>奇異果</span><span>1 個</span></li>
+          <li><span>橙</span><span>1 個</span></li>
+          <li><span>木瓜</span><span>半個</span></li>
+          <li><span>藍莓</span><span>1 小盒</span></li>
+          <li><span>士多啤梨</span><span>約 5 粒</span></li>
+        </ul>
+      </article>
+
+      <article class="info-card">
+        <h3>果仁、種子和其他</h3>
+        <ul class="shop">
+          <li><span>合桃（無鹽）</span><span>約 30 克</span></li>
+          <li><span>杏仁（無鹽）</span><span>約 15 克</span></li>
+          <li><span>腰果（無鹽）</span><span>約 15 克</span></li>
+          <li><span>奇亞籽</span><span>1 小包</span></li>
+          <li><span>低脂奶</span><span>約 600 毫升</span></li>
+          <li><span>低脂原味乳酪（無加糖）</span><span>1 小杯</span></li>
+          <li><span>橄欖油、芥花籽油</span><span>各 1 支常用裝</span></li>
+          <li><span>生抽或少鹽豉油、蒸魚豉油</span><span>少量</span></li>
+          <li><span>黑胡椒、白胡椒、肉桂、香草</span><span>按家中存貨</span></li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="eating-out" class="section">
+      <h2>外出用餐</h2>
+      <p class="section-lead">茶餐廳、酒樓和快餐店都可以。優先揀蒸、灼和少油的菜，避開酥皮和油炸。</p>
+
+      <article class="info-card">
+        <h3>點菜時可以這樣說</h3>
+        <p class="order-line">少油、少鹽、醬汁另上、走甜。</p>
+        <ul class="points">
+          <li>茶餐廳：可揀白粥（少配油條）、蒸腸粉並要求少醬、蒸蛋、白灼菜。少叫菠蘿包、蛋撻、西多、奶油多士、炸兩和煉奶奶茶。飲品可改無糖茶或檸檬水。</li>
+          <li>酒樓：清蒸魚、白灼時蔬、豆腐、蒸水蛋、去皮白切雞較合適。少點脆皮、燒味肥位和酥皮點心。</li>
+          <li>麵食：如要叫，揀清湯麵。不要乾炒牛河、炒麵或煎薄餸。</li>
+          <li>快餐和燒味：可叫去皮白切或蒸的肉，加多一碟青菜，醬汁自己蘸。少揀炸雞、薯條、午餐肉、腸仔和臘味做主菜。</li>
+          <li>便利店：可揀水果、無糖豆漿、原味果仁小包、燕麥。少揀腸仔、午餐肉飯糰和奶油包。</li>
+          <li>份量：飯約半碗至一碗，蔬菜至少佔餐盤一半。</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="disclaimer" role="note">
+        <strong>聲明</strong>
+        <p>本頁是一般飲食資料，並非醫療建議，亦不能作診斷或治療。低密度脂蛋白（LDL）偏高、患有心臟病或糖尿病的人士，請跟從主診醫生和營養師的個別指導。調整飲食不能取代已處方的藥物，請勿自行停藥或更改劑量。</p>
+      </div>
+      <p class="colophon">用 Safari 的分享按鈕，選「加入主畫面」，即可當每日餐單打開。</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
